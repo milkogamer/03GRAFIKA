@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MOJA STRONA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(138, 138, 138);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        td {
+            text-align: center;
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        #date {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+    <center><a style="text-decoration:none" href="podstrona1.html">Projekt 03-GRAFIKA</a>  </center>
+</head>
+<body>
+    Tabelka dla sora na 6
+<div class="container">
+    <table BORDER=15 CELLPADDING=15>
+        <tr>
+            <td rowspan="3" ><img src="https://i.iplsc.com/-/000G0EYFWMCWISI6-C461-F4.jpg" alt="Jesien on top"></td>
+           <td style="width: 200px;"><a href="http://zsdios.pl/">Najlepsze Techikum </a></td>
+            <td rowspan="3" ><img src="https://polska-org.pl/foto/7231/Zespol_Szkol_Drzewnych_i_Ochrony_Srodowiska_im_Jana_Zamoyskiego_ul_Browarna_Zwierzyniec_7231688.jpg" alt="zdjecie super szkoły"></td>
+        </tr>
+        <tr>
+            <td>Miłosz<br>Proć</td>
+        </tr>
+
+        <tr>
+            <td id="date"></td>
+        </tr>
+    </table>
+    <footer><p>Super tabelka na 6 </p></footer>
+</div>
+<script type="text/javascript">
+    function updateDate() {
+        const dateElement = document.getElementById("date");
+        const currentDate = new Date();
+        dateElement.innerText = "Aktualna data i godzina: "  + currentDate.toLocaleString();
+    }
+
+  
+    updateDate();
+
+   
+    setInterval(updateDate, 1000);
+</script>
+</body>
+</html>
