@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +10,7 @@
             margin: 0;
             padding: 0;
         }
-        img {
-
-            width: 600px;
-            height:500px;
-        }
+       
         div{
             size: 700px;
             
@@ -36,19 +31,16 @@
     <center>
         <h1>PROJEKT 03-GRAFIKA</h1>
     </center>
-    <div>
-        <center>
-            <img src="zwierzyniec.jpg">
-        </center>
-    </div>
-    <map name="zwierzyniec">
-        <area shape="rect" coords="860,399,862,400" alt="SZKOLA" href="https://www.google.pl/maps/place/Zesp%C3%B3%C5%82+Szk%C3%B3%C5%82+Drzewnych+i+Ochrony+%C5%9Arodowiska+im.+Jana+Zamoyskiego+w+Zwierzy%C5%84cu/@50.6078597,22.9661728,17z/data=!3m1!4b1!4m6!3m5!1s0x472345d7168c738b:0x2e784cb58f081b5f!8m2!3d50.6078563!4d22.9687477!16s%2Fg%2F1wfcmxq4?entry=ttu">
-        <area shape="circle" coords="290,172,333,250" alt="KOSCIOL" href="https://www.google.pl/maps/place/Ko%C5%9Bci%C3%B3%C5%82+rzymskokatolicki+%22Na+Wodzie%22+pw.+%C5%9Bw.+Jana+Nepomucena/@50.6090122,22.9652749,17z/data=!3m1!4b1!4m6!3m5!1s0x472345d6fff3fc4b:0x73b9b1ad19cf2164!8m2!3d50.6090088!4d22.9678498!16s%2Fg%2F11bw8jr77l?entry=ttu">
-        <area shape="circle" coords="337,300,44" alt="Browar" href="https://www.google.pl/maps/place/Browar+Zwierzyniec/@50.7455122,22.2228399,9z/data=!4m10!1m2!2m1!1sbrowar!3m6!1s0x472345d76233e5ed:0x2f9d1ba4cdb670b1!8m2!3d50.607356!4d22.9675306!15sCgZicm93YXJaCCIGYnJvd2FykgEHYnJld2VyeeABAA!16s%2Fg%2F120qwfyz?entry=ttu">
-      </map>
-      
-    
+   
   
+
+    <center> <img src="zwierzyniec.jpg" usemap="#image-map"></center>
+
+   <map name="image-map">
+       <area target="_parent" alt="Browar" title="Browar" href="https://maps.app.goo.gl/ZTpRUj8Z7nbsGjHh6" coords="804,361,972,361,1022,477,903,495" shape="poly">
+       <area target="_parent" alt="Koscioł" title="Koscioł" href="https://maps.app.goo.gl/sLwnreYxfpEk14PB6" coords="511,517,620,537,584,665,447,634" shape="poly">
+       <area target="_parent" alt="Technikum" title="Technikum" href="https://maps.app.goo.gl/aafebthh4qN24ERS6" coords="246,358,462,380,460,485,223,492" shape="poly">
+   </map>
 
 
 </body>
